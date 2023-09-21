@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    #container{
+        margin:0px;
+        padding:0px;
+        display: flex;
+        /* border: 3px solid black; */
+        justify-content: center;
+        height: auto;
+        gap:35px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        
+    }
+  
+    
+    .first{
+        margin-right: 300px;
+        width: 180px;
+        font-size: 30px;
+        text-align: center;
+        color:white;
+        background:linear-gradient(90deg,rgb(119, 48, 158),rgb(72, 61, 232));
+        line-height: 50px;
+        
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .one{
+        text-align: center;
+        height: 55px;
+        width: 90px;
+        line-height: 50px;
+        /* border: 3px solid red; */
+        font-size: 19px;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+
+    }
+    .one:hover{
+        cursor: pointer;
+        color:blue;
+    }
+</style>
+<body>
+    <div id="container">
+        <div class="first"><b>StudyLab</b></div>
+        <div class="one" style="color:blue">Home</div>
+        <div class="one">About</div>
+        <div class="one">Course</div>
+        <div class="one">Instructor</div>
+        <div class="one">Blog</div>
+        <div class="one">Contact</div>
+    </div><br>
+    <div id="content">
+        <div class="wel">
+            <p class="para">WELCOME TO STUDYLAB</p><br>
+            <h1>We Are Study An  Online <br>Learning Center</h1><br><br>
+            <p >
+                A small river named Duden flows by their place and supplies it <br>
+                with the necessary regelialia. it is a paradisematic country, in <br>
+                which roasted parts of sentences fly into mouth
+            </p><br>
+            <p>
+                Far far away behind the word mountains,far from the <br>
+                countries Vokalia and Consonatia, there live the blind texts. <br>
+                spearated they liv in Bookmarksgrove right at the coast of the <br>
+                Semantics, a large language ocean.
+            </p>
+            <br><br><br>
+            <div id="last">
+                <div class="o"><img src="https://cdn-icons-png.flaticon.com/128/3214/3214781.png" alt=""></div>
+                <div class="t">Learn anything from StudyLab,<br> Watch video</div>
+            </div>
+        </div>
+        <div id="tel">
+            <div class="same">
+                <img src="https://cdn-icons-png.flaticon.com/128/3172/3172183.png" alt=""><br><br>
+                <p>Top Quality Content</p>
+                <div>A small river named Duden flows by their place and supplies</div>
+            </div>
+            <div class="same">
+                <img src="https://cdn-icons-png.flaticon.com/128/9280/9280764.png" alt=""><br><br>
+                <p>Highly Skilled Instructor</p>
+                <div>A small river named Duden flows by their place and supplies</div>
+            </div>
+            <div class="same">
+                <img src="https://cdn-icons-png.flaticon.com/128/2980/2980511.png" alt=""><br><br>
+                <p>World Class & Quiz</p>
+                <div>A small river named Duden flows by their place and supplies</div>
+            </div>
+            <div class="same">
+                <img src="https://cdn-icons-png.flaticon.com/128/4157/4157073.png" alt=""><br><br>
+                <p>Get Certified</p>
+                <div>A small river named Duden flows by their place and supplies</div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<style>
+    
+    .o>img{
+        width: 80px;
+        height: 80px;
+        
+    }
+    .same>div{
+        margin:20px;
+        font-size: 20px;
+    }
+    .same>p{
+        margin-left: 20px;
+        font-size: 26px;
+    }
+    .same>img{
+        background-color: rgba(166, 202, 252, 0.425);
+        border-radius:40PX;
+        margin-left: 25px;
+        margin-top: 25px;
+        /* border:2px solid black; */
+        height:65px;
+        width:65px;
+    }
+    #tel{
+        margin-top: 19px;
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 280px 280px;
+        justify-content: center;
+        align-content: center;
+        gap:30px;
+    }
+    .same{
+        height:280px ;
+        width: 250px;
+        /* border: 3px solid red; */
+        margin-top: -10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 16px;
+    }
+    .o{
+        width: 30%;
+        /* border: 3px solid green; */
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(195, 195, 239);
+        
+        
+    }
+    
+    .t{
+        width: 60%;
+        /* border: 3px solid green; */
+        height: 60px;
+        margin-top: 29px;
+        font-size: 25px;
+    
+    }
+    #last{
+        height: 120px;
+        width: 100%;
+        /* border:3px solid red; */
+        display: flex;
+        justify-content: space-around;
+    }
+    p{
+        font-size:20px;
+    }
+    .para{
+        color:black;
+    }
+    .wel{
+        margin:40px;
+        margin-left: 135px;
+        margin-top: 90px;
+    }
+    h1{
+        color:rgb(15, 14, 14);
+        font-size: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #content{
+        display: flex;
+        height: auto;
+        width: 100%;
+        /* border: 3px solid black; */
+    }
+    #content>div{
+        width:50%;
+        height: 650px;
+        /* border: 2px solid green; */
+    }
+   div>.para{
+    color:blue;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+</style>
+</html>

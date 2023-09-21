@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        padding-bottom:27px;
+        font-size: 45px;
+        color:green;
+        font-family: 'Times New Roman', Times, serif
+    }
+    #out{
+        margin-left: 10px;
+        /* background-color: black; */
+        /* text-align: center;
+        justify-content: center;
+        align-items: center; */
+        /* justify-content: center; */
+        height: auto;
+        padding-left: 550px;
+        width: auto;
+        /* border: 3px solid black; */
+    }
+    /* body{
+        justify-content: center;
+        align-items: center;
+    } */
+   #container{
+    text-align: center;
+    justify-content: center;
+    line-height: 70px;
+    /* border:3px solid red; */
+    /* height: 590px; */
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px ;
+    grid-template-rows: 70px 70px 70px 70px 70px 34px ;
+    gap:7px;
+    grid-template-areas: 
+    
+    "n4 n4 n4 n4"  
+    "one two three add"
+    "four five six sub"
+    "seven eight nine mul"
+    "C zero equal div"
+     ;
+     height:400px;
+     width:350px;
+     /* text-align: center; */
+     /* justify-content: center; */
+     /* align-items: center; */
+     /* margin-left: 45%; */
+     padding:25px;
+     font-size: 20px;
+     font-weight: bold;
+     
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+   #container>div{
+    
+    height: 70px;
+    /* border:1px solid green; */
+    border-radius: 5px;
+
+}
+#container>:nth-child(1){
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-area:n1;
+}
+#container>:nth-child(2){
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-area: n2;
+}#container>:nth-child(3){
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-area: n3; 
+}
+
+#container>:nth-child(4){
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-area: n4;
+}#container>:nth-child(5){
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-area: one;
+}#container>:nth-child(6){
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-area: two;
+}#container>:nth-child(7){
+    background-color: white;
+    grid-area: three;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(8){
+    background-color: black;
+    grid-area: add;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(9){
+    background-color: white;
+    grid-area: four;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(10){
+    background-color: white;
+    grid-area: five;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(11){
+    background-color: white;
+    grid-area: six;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(12){
+    grid-area: sub;
+    background-color: black;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(13){
+    background-color: white;
+    grid-area: seven;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(14){
+    grid-area: eight;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(15){
+    grid-area: nine;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(16){
+    background-color: black;
+    color:white;
+    grid-area:mul ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(17){
+    background-color: red;
+    color:white;
+    grid-area: C;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(18){
+    background-color: white;
+    grid-area: zero;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(19){
+    grid-area: equal;
+    background-color: black;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}#container>:nth-child(20){
+    grid-area: div;
+    color:white;
+    background-color:black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+</style>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="out">
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>*</div>
+        <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+    </div>
+    </div>
+</body>
+</html>
